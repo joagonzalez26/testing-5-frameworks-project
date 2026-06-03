@@ -1,0 +1,10 @@
+pytest
+requests
+pytest-html
+selenium
+webdriver-manager
+robotframework
+robotframework-seleniumlibrary
+playwright
+pytest-playwright
+locust

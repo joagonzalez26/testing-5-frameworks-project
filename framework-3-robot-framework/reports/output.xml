@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-06-03T04:25:26.921699" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/joagonzalez/Desktop/testing-5-frameworks-project/framework-3-robot-framework/tests">
+<suite id="s1-s1" name="Navegacion Sistema" source="/Users/joagonzalez/Desktop/testing-5-frameworks-project/framework-3-robot-framework/tests/navegacion_sistema.robot">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:27.059430" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:25:27.059312" elapsed="32.157226"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.217144" elapsed="0.029020"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.246286" elapsed="0.000875"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>framework-3-robot-framework/evidencias</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.247273" elapsed="0.000277"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.247701" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.247607" elapsed="0.000122"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:25:27.059034" elapsed="32.188785"/>
+</kw>
+<test id="s1-s1-t1" name="RF-001 - Verificar Carga Del Frontend" line="13">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.249431" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.249247" elapsed="0.007977"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.257430" elapsed="0.032579"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:25:59.249021" elapsed="0.041055"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.293564" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.290208" elapsed="0.003405"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.487381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-frontend-home.png"&gt;&lt;img src="../evidencias/robot-frontend-home.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-frontend-home.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.293852" elapsed="0.193582"/>
+</kw>
+<doc>Valida que la aplicación web cargue correctamente desde el navegador.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.248328" elapsed="0.239205"/>
+</test>
+<test id="s1-s1-t2" name="RF-002 - Verificar Navegacion A Participantes" line="18">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.488025" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.487975" elapsed="0.017266"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.505361" elapsed="0.002799"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:25:59.487868" elapsed="0.020337"/>
+</kw>
+<kw name="Click Menu Option">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-03T04:25:59.508804" level="INFO">${xpath} = xpath=//a[contains(normalize-space(.), "Participantes")] | //button[contains(normalize-space(.), "Participantes")] | //div[contains(normalize-space(.), "Participantes")]</msg>
+<var>${xpath}</var>
+<arg>xpath=//a[contains(normalize-space(.), "${texto}")] | //button[contains(normalize-space(.), "${texto}")] | //div[contains(normalize-space(.), "${texto}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.508482" elapsed="0.000337"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.508864" elapsed="0.008934"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:25:59.518034" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.), "Participantes")] | //button[contains(normalize-space(.), "Participantes")] | //div[contains(normalize-space(.), "Participantes")]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.517892" elapsed="0.027432"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-03T04:26:00.546185" level="INFO">Slept 1 second.</msg>
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.545465" elapsed="1.000825"/>
+</kw>
+<arg>Participantes</arg>
+<status status="PASS" start="2026-06-03T04:25:59.508347" elapsed="1.038032"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:00.552213" level="INFO">Current page contains text 'Participantes'.</msg>
+<arg>Participantes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.546546" elapsed="0.005718"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:00.713770" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-participantes.png"&gt;&lt;img src="../evidencias/robot-participantes.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-participantes.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.552377" elapsed="0.161452"/>
+</kw>
+<doc>Valida que el módulo Participantes sea accesible desde la interfaz.</doc>
+<status status="PASS" start="2026-06-03T04:25:59.487675" elapsed="1.226247"/>
+</test>
+<test id="s1-s1-t3" name="RF-003 - Verificar Navegacion A Salas" line="24">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:00.714366" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.714311" elapsed="0.016370"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.730839" elapsed="0.002924"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:00.714207" elapsed="0.019636"/>
+</kw>
+<kw name="Click Menu Option">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-03T04:26:00.734420" level="INFO">${xpath} = xpath=//a[contains(normalize-space(.), "Salas")] | //button[contains(normalize-space(.), "Salas")] | //div[contains(normalize-space(.), "Salas")]</msg>
+<var>${xpath}</var>
+<arg>xpath=//a[contains(normalize-space(.), "${texto}")] | //button[contains(normalize-space(.), "${texto}")] | //div[contains(normalize-space(.), "${texto}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.734230" elapsed="0.000219"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.734496" elapsed="0.006383"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:00.741086" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.), "Salas")] | //button[contains(normalize-space(.), "Salas")] | //div[contains(normalize-space(.), "Salas")]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.740962" elapsed="0.208633"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-03T04:26:01.949920" level="INFO">Slept 1 second.</msg>
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.949701" elapsed="1.000298"/>
+</kw>
+<arg>Salas</arg>
+<status status="PASS" start="2026-06-03T04:26:00.734095" elapsed="1.215966"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:01.955880" level="INFO">Current page contains text 'Salas'.</msg>
+<arg>Salas</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:01.950181" elapsed="0.005743"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:02.099115" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-salas.png"&gt;&lt;img src="../evidencias/robot-salas.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-salas.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:01.956023" elapsed="0.143155"/>
+</kw>
+<doc>Valida que el módulo Salas sea accesible desde la interfaz.</doc>
+<status status="PASS" start="2026-06-03T04:26:00.714033" elapsed="1.385239"/>
+</test>
+<test id="s1-s1-t4" name="RF-004 - Verificar Navegacion A Reservas" line="30">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:02.099720" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.099664" elapsed="0.015093"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.114852" elapsed="0.002573"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:02.099568" elapsed="0.017902"/>
+</kw>
+<kw name="Click Menu Option">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-03T04:26:02.117942" level="INFO">${xpath} = xpath=//a[contains(normalize-space(.), "Reservas")] | //button[contains(normalize-space(.), "Reservas")] | //div[contains(normalize-space(.), "Reservas")]</msg>
+<var>${xpath}</var>
+<arg>xpath=//a[contains(normalize-space(.), "${texto}")] | //button[contains(normalize-space(.), "${texto}")] | //div[contains(normalize-space(.), "${texto}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.117778" elapsed="0.000180"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.118004" elapsed="0.007905"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:02.126120" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.), "Reservas")] | //button[contains(normalize-space(.), "Reservas")] | //div[contains(normalize-space(.), "Reservas")]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.125998" elapsed="0.015066"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-03T04:26:03.142390" level="INFO">Slept 1 second.</msg>
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.141159" elapsed="1.001564"/>
+</kw>
+<arg>Reservas</arg>
+<status status="PASS" start="2026-06-03T04:26:02.117645" elapsed="1.025347"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:03.157830" level="INFO">Current page contains text 'Reservas'.</msg>
+<arg>Reservas</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.143449" elapsed="0.014559"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:03.298796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-reservas.png"&gt;&lt;img src="../evidencias/robot-reservas.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-reservas.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.158348" elapsed="0.140507"/>
+</kw>
+<doc>Valida que el módulo Reservas sea accesible desde la interfaz.</doc>
+<status status="PASS" start="2026-06-03T04:26:02.099400" elapsed="1.199556"/>
+</test>
+<test id="s1-s1-t5" name="RF-005 - Verificar Navegacion A Reportes" line="36">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:03.299419" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.299368" elapsed="0.014945"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.314415" elapsed="0.002845"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:03.299261" elapsed="0.018049"/>
+</kw>
+<kw name="Click Menu Option">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-03T04:26:03.317700" level="INFO">${xpath} = xpath=//a[contains(normalize-space(.), "Reportes")] | //button[contains(normalize-space(.), "Reportes")] | //div[contains(normalize-space(.), "Reportes")]</msg>
+<var>${xpath}</var>
+<arg>xpath=//a[contains(normalize-space(.), "${texto}")] | //button[contains(normalize-space(.), "${texto}")] | //div[contains(normalize-space(.), "${texto}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.317545" elapsed="0.000169"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.317755" elapsed="0.007653"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:03.325588" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.), "Reportes")] | //button[contains(normalize-space(.), "Reportes")] | //div[contains(normalize-space(.), "Reportes")]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.325480" elapsed="0.015302"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-03T04:26:04.341229" level="INFO">Slept 1 second.</msg>
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.340876" elapsed="1.000659"/>
+</kw>
+<arg>Reportes</arg>
+<status status="PASS" start="2026-06-03T04:26:03.317425" elapsed="1.024442"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:04.355432" level="INFO">Current page contains text 'Reportes'.</msg>
+<arg>Reportes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.342328" elapsed="0.013282"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:04.519365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-reportes.png"&gt;&lt;img src="../evidencias/robot-reportes.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-reportes.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.355964" elapsed="0.163461"/>
+</kw>
+<doc>Valida que el módulo Reportes sea accesible desde la interfaz.</doc>
+<status status="PASS" start="2026-06-03T04:26:03.299067" elapsed="1.220449"/>
+</test>
+<test id="s1-s1-t6" name="RF-006 - Verificar Error En Modulo Sanciones" line="42">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:04.520005" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.519945" elapsed="0.017749"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.537788" elapsed="0.002634"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:04.519846" elapsed="0.020626"/>
+</kw>
+<kw name="Click Menu Option">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-03T04:26:04.540865" level="INFO">${xpath} = xpath=//a[contains(normalize-space(.), "Sanciones")] | //button[contains(normalize-space(.), "Sanciones")] | //div[contains(normalize-space(.), "Sanciones")]</msg>
+<var>${xpath}</var>
+<arg>xpath=//a[contains(normalize-space(.), "${texto}")] | //button[contains(normalize-space(.), "${texto}")] | //div[contains(normalize-space(.), "${texto}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.540709" elapsed="0.000170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.540922" elapsed="0.006676"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:04.547830" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.), "Sanciones")] | //button[contains(normalize-space(.), "Sanciones")] | //div[contains(normalize-space(.), "Sanciones")]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.547695" elapsed="0.015303"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-03T04:26:05.563458" level="INFO">Slept 1 second.</msg>
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.563087" elapsed="1.000504"/>
+</kw>
+<arg>Sanciones</arg>
+<status status="PASS" start="2026-06-03T04:26:04.540587" elapsed="1.023098"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:05.569405" level="INFO">Current page contains text 'Sanciones'.</msg>
+<arg>Sanciones</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.563865" elapsed="0.005588"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Error</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.569550" elapsed="0.003846"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:05.714843" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-sanciones-error.png"&gt;&lt;img src="../evidencias/robot-sanciones-error.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-sanciones-error.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.573479" elapsed="0.141425"/>
+</kw>
+<doc>Valida que el módulo Sanciones muestra un error visible ya detectado en la exploración manual.</doc>
+<status status="PASS" start="2026-06-03T04:26:04.519641" elapsed="1.195366"/>
+</test>
+<test id="s1-s1-t7" name="RF-007 - Verificar Error En Dashboard" line="49">
+<kw name="Ir Al Inicio" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:05.715465" level="INFO">Opening url 'http://localhost:5173'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.715414" elapsed="0.015305"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.730810" elapsed="0.002664"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:05.715310" elapsed="0.018206"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:05.738919" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.733598" elapsed="0.005367"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Error cargando horarios</arg>
+<arg>timeout=10 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.739078" elapsed="0.003606"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-03T04:26:05.912864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidencias/robot-dashboard-error-horarios.png"&gt;&lt;img src="../evidencias/robot-dashboard-error-horarios.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robot-dashboard-error-horarios.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.742754" elapsed="0.170172"/>
+</kw>
+<doc>Valida el error visible en la sección de horarios más demandados del Dashboard.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.715113" elapsed="0.197905"/>
+</test>
+<kw name="Cerrar Navegador" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-03T04:26:05.913378" elapsed="0.074532"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:26:05.913288" elapsed="0.074683"/>
+</kw>
+<status status="PASS" start="2026-06-03T04:25:26.937753" elapsed="39.050241"/>
+</suite>
+<status status="PASS" start="2026-06-03T04:25:26.922220" elapsed="39.066107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="7" fail="0" skip="0">Tests</stat>
+<stat name="Navegacion Sistema" id="s1-s1" pass="7" fail="0" skip="0">Tests.Navegacion Sistema</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
