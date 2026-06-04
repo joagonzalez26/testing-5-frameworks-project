@@ -280,7 +280,7 @@ Este proyecto representa una práctica completa inicial de QA Automation.
 
 Más que ejecutar herramientas, el objetivo fue mostrar una forma de trabajo: analizar, probar manualmente, documentar, automatizar, generar evidencia y sacar conclusiones.
 
-Es un proyecto pensado para aprendizaje, práctica y portfolio profesional.
+Es un proyecto pensado para aprendizaje y práctica
 
 ---
 
