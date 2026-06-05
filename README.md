@@ -6,7 +6,7 @@
 
 Proyecto personal de QA Automation donde probé un sistema real usando cinco herramientas: **Pytest**, **Selenium**, **Robot Framework**, **Playwright** y **Locust**.
 
-La idea de este proyecto fue practicar una forma de trabajo más cercana a un entorno real: primero entender el sistema, después probarlo manualmente, documentar errores, generar evidencia y finalmente automatizar pruebas con distintos enfoques.
+La idea de este proyecto fue entender el sistema, después probarlo manualmente, documentar errores, generar evidencia y finalmente automatizar pruebas con distintos enfoques.
 
 ---
 
@@ -14,7 +14,7 @@ La idea de este proyecto fue practicar una forma de trabajo más cercana a un en
 
 Este proyecto lo armé para fortalecer mi perfil como QA / Automation Tester.
 
-No quise hacer solamente “tests que pasan”, sino mostrar un proceso completo: mirar el sistema con criterio, detectar comportamientos raros, documentar lo que encontré y después automatizar pruebas que realmente tengan sentido.
+acá se vé un proceso completo: mirar el sistema con criterio, detectar comportamientos raros, documentar lo que encontré y después automatizar pruebas que realmente tengan sentido.
 
 ---
 
