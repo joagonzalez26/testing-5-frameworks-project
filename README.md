@@ -10,9 +10,9 @@ La idea de este proyecto fue entender el sistema, después probarlo manualmente,
 
 ---
 
-## Nota 
+## Nota personal
 
-Este proyecto lo armé con la idea de ayudar personas que quieran introducirse al mundo del testing automatizado.
+Este proyecto lo armé tambíen con la idea de ayudar personas que quieran introducirse al mundo del testing automatizado.
 
 acá se vé un proceso completo: mirar el sistema con criterio, detectar comportamientos raros, documentar lo que encontré y después automatizar pruebas que realmente tengan sentido.
 
