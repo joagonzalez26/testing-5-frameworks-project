@@ -62,13 +62,7 @@ Se trabajó sobre:
 
 ## Frameworks utilizados
 
-| Framework | Enfoque | Resultado |
-|---|---|---|
-| Pytest | Pruebas de API / backend | 6 tests passed |
-| Selenium | Automatización web clásica | 9 tests passed |
-| Robot Framework | Pruebas funcionales legibles | 7 tests passed |
-| Playwright | Pruebas E2E modernas | 12 tests passed |
-| Locust | Pruebas básicas de carga | 0% fallos |
+<img width="674" height="347" alt="XD" src="https://github.com/user-attachments/assets/c91a4d9b-bb0f-413f-8463-590365b93b34" />
 
 ---
 
