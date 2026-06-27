@@ -12,7 +12,7 @@ La idea de este proyecto fue entender el sistema, después probarlo manualmente,
 
 ## Nota 
 
-Este proyecto lo armé para fortalecer mi perfil como QA / Automation Tester.
+Este proyecto lo armé con la idea de ayudar personas que quieran introducirse al mundo del testing automatizado.
 
 acá se vé un proceso completo: mirar el sistema con criterio, detectar comportamientos raros, documentar lo que encontré y después automatizar pruebas que realmente tengan sentido.
 
@@ -259,7 +259,7 @@ El proyecto incluye:
 
 ## Aprendizajes principales
 
-Con este proyecto practiqué:
+Con este proyecto se puede ver:
 
 - Cómo analizar un sistema antes de automatizar.
 - Cómo diseñar casos de prueba.
@@ -271,16 +271,6 @@ Con este proyecto practiqué:
 - Cómo trabajar E2E con Playwright.
 - Cómo iniciar pruebas de carga con Locust.
 - Cómo comparar herramientas según su utilidad real.
-
----
-
-## Conclusión
-
-Este proyecto representa una práctica completa inicial de QA Automation.
-
-Más que ejecutar herramientas, el objetivo fue mostrar una forma de trabajo: analizar, probar manualmente, documentar, automatizar, generar evidencia y sacar conclusiones.
-
-Es un proyecto pensado para aprendizaje y práctica
 
 ---
 
