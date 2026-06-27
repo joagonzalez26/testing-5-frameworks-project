@@ -276,5 +276,5 @@ Con este proyecto se puede ver:
 
 ## Autor
 
-**Joaquín González**  
-Perfil orientado a QA Automation, testing manual, automatización, documentación técnica y desarrollo de software.
+**Joaquín Lorenzo González**  
+**+54 3537564663**
