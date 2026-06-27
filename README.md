@@ -1,4 +1,4 @@
-# Testing 5 Frameworks Project
+# Tester Automation - QA & Frameworks
 
 <img width="1920" height="1080" alt="Black and White Minimalist Creative Portfolio Presentation" src="https://github.com/user-attachments/assets/cd67b58e-d930-4e1d-9398-18e1269f9c10" />
 
