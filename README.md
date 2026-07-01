@@ -1,6 +1,6 @@
-# Tester Automation - QA & Frameworks
+# Tester Automation - QA & Frameworks 
 
-<img width="1920" height="1080" alt="Black and White Minimalist Creative Portfolio Presentation" src="https://github.com/user-attachments/assets/cd67b58e-d930-4e1d-9398-18e1269f9c10" />
+<img width="1672" height="941" alt="a2f81a83-a0f2-4474-9c34-222f889b8902" src="https://github.com/user-attachments/assets/f16685e8-f628-4114-835a-fa7eae31581f" />
 
 ---
 
