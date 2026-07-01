@@ -60,7 +60,7 @@ Se trabajó sobre:
 
 ---
 
-## Frameworks utilizados
+## Información 
 
 <img width="1491" height="1055" alt="0cfa1aa6-4fa8-4efa-ba31-5968e48c7217" src="https://github.com/user-attachments/assets/01225f57-2b85-4162-9594-8a3d6522b3af" />
 
