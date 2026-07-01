@@ -267,5 +267,7 @@ Con este proyecto se puede ver:
 ## Autor
 
 **Joaquín Lorenzo González** 
+
 **Licenciatura en Informática - Universidad Siglo21**
+
 **joagonzalez166@gmail.com**
