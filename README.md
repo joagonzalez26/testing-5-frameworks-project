@@ -4,13 +4,15 @@
 
 ---
 
+<img width="1491" height="1055" alt="0cfa1aa6-4fa8-4efa-ba31-5968e48c7217" src="https://github.com/user-attachments/assets/01225f57-2b85-4162-9594-8a3d6522b3af" />
+
+---
+
 Proyecto personal de QA Automation donde probé un sistema real usando cinco herramientas: **Pytest**, **Selenium**, **Robot Framework**, **Playwright** y **Locust**.
 
 La idea de este proyecto fue entender el sistema, después probarlo manualmente, documentar errores, generar evidencia y finalmente automatizar pruebas con distintos enfoques.
 
 ---
-
-## Nota personal
 
 Este proyecto lo armé tambíen con la idea de ayudar personas que quieran introducirse al mundo del testing automatizado.
 
@@ -57,12 +59,6 @@ Se trabajó sobre:
 - Reportes HTML.
 - Capturas de evidencia.
 - Comparación final entre frameworks.
-
----
-
-## Información 
-
-<img width="1491" height="1055" alt="0cfa1aa6-4fa8-4efa-ba31-5968e48c7217" src="https://github.com/user-attachments/assets/01225f57-2b85-4162-9594-8a3d6522b3af" />
 
 ---
 
@@ -270,5 +266,6 @@ Con este proyecto se puede ver:
 
 ## Autor
 
-**Joaquín Lorenzo González**  
-**+54 3537564663**
+**Joaquín Lorenzo González** 
+**Licenciatura en Informática - Universidad Siglo21**
+**joagonzalez166@gmail.com**
