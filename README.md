@@ -258,7 +258,7 @@ Con este proyecto se puede ver:
 - Cómo probar APIs con Pytest.
 - Cómo automatizar UI con Selenium.
 - Cómo escribir pruebas funcionales con Robot Framework.
-- Cómo trabajar E2E con Playwright.
+- Cómo trabajar E2E (Pruebas de recorrido completo de un usuario real en una aplicación) con Playwright.
 - Cómo iniciar pruebas de carga con Locust.
 - Cómo comparar herramientas según su utilidad real.
 
