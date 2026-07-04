@@ -303,7 +303,7 @@ Con este proyecto se puede ver:
 
 ## Autor
 
-**Joaquín Lorenzo González** 
+**Joaquín Lorenzo Gonzalez** 
 
 **Licenciatura en Informática - Universidad Siglo 21**
 
