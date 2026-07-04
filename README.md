@@ -42,7 +42,44 @@ Módulos analizados:
 
 ---
 
-## Objetivo del proyecto
+## Qué objetivo cumple el software
+
+El sistema tiene como objetivo facilitar la gestión de salas dentro de un entorno institucional. Permite consultar información relacionada con participantes, salas, reservas, sanciones y reportes, centralizando datos importantes para la administración y el seguimiento del uso de los espacios.
+
+Desde el punto de vista QA, el objetivo fue validar que las partes principales del sistema funcionen de manera accesible, estable y entendible para un usuario.
+
+---
+
+## Cómo las pruebas validan ese objetivo
+
+Las pruebas realizadas buscan comprobar que el sistema pueda cumplir su propósito principal: permitir la consulta y gestión de información relacionada con salas y reservas.
+
+Para eso, el proyecto cubre distintas capas:
+
+- **Backend / API:** valida que el servidor responda correctamente, que Swagger esté disponible y que los endpoints principales funcionen.
+- **Frontend / UI:** verifica que la interfaz cargue y que el usuario pueda navegar por los módulos principales.
+- **Datos visibles:** comprueba que se muestren tablas, textos y secciones relevantes para el uso del sistema.
+- **Errores detectados:** documenta fallos reales encontrados durante la exploración, como errores 404, `Failed to fetch` y métricas incompletas.
+- **Carga básica:** evalúa cómo responde la API ante múltiples requests concurrentes.
+
+De esta forma, las pruebas no están aisladas: cada una se relaciona con una parte concreta del comportamiento esperado del sistema.
+
+---
+
+## Navegación rápida a las pruebas
+
+- [Pruebas de API con Pytest](./framework-1-pytest)
+- [Pruebas de UI con Selenium](./framework-2-selenium)
+- [Pruebas funcionales con Robot Framework](./framework-3-robot-framework)
+- [Pruebas E2E con Playwright](./framework-4-playwright)
+- [Pruebas de carga con Locust](./framework-5-locust)
+- [Reporte de bugs](./docs/06-reporte-de-bugs.md)
+- [Evidencia manual](./docs/07-evidencia-manual.md)
+- [Conclusiones del proyecto](./conclusiones)
+
+---
+
+## Objetivo del proyecto en general
 
 El objetivo principal fue construir una práctica completa de testing, combinando documentación, análisis manual y automatización.
 
