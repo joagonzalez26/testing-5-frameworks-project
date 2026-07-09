@@ -1,4 +1,4 @@
-# Tester Automation - QA & Frameworks 
+# Tester qa automation 
 
 <img width="1672" height="941" alt="a2f81a83-a0f2-4474-9c34-222f889b8902" src="https://github.com/user-attachments/assets/f16685e8-f628-4114-835a-fa7eae31581f" />
 
