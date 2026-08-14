@@ -305,6 +305,4 @@ Con este proyecto se puede ver:
 
 **Joaquín Lorenzo Gonzalez** 
 
-**Licenciatura en Informática - Universidad Siglo 21**
-
 **joagonzalez166@gmail.com**
